@@ -1,0 +1,40 @@
+@import "@/assets/sass/_mixins";
+@import "@/assets/sass/_variables";
+@import "@/assets/sass/_keyframes";
+
+.mode{
+    position: absolute;
+    right: 3rem;
+    width: 2rem;
+    height: 2rem;
+    @include flex(row,center,center,0);
+    margin-right: 1rem;
+    &__light, &__dark{
+        width: 1.8rem;
+        height: 1.8rem;
+        cursor: pointer;
+        &.show{
+            display: block;
+        }
+        &.vanish{
+            display: none;
+        }
+    }
+    &__light{
+        animation: sun .5s forwards;
+    }
+    &__dark{
+        animation: moon .5s forwards;
+    }
+    &__path{
+        fill: $black;
+    }
+}
+
+@media(max-width: 600px){
+    .mode{
+        position: static;
+        margin: auto;
+        margin-top: 1rem;
+    }
+}

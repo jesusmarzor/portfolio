@@ -1,0 +1,19 @@
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    height: 4.5rem;
+    transition: height 500ms;
+}
+
+@media(max-width: 600px){
+    .header{
+        position: absolute;
+        height: 3rem;
+        &.deploy{
+            height: 28rem;
+        }
+    }
+}

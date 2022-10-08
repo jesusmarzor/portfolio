@@ -1,0 +1,8 @@
+@import "@/assets/sass/_mixins";
+.listSocialNetwork{
+    padding-bottom: 1rem;
+    &__li{
+        list-style: none;
+        @include flex(row,center,center,0);
+    }
+}

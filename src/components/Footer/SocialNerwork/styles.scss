@@ -1,0 +1,25 @@
+@import "@/assets/sass/_mixins";
+@import "@/assets/sass/_variables";
+
+.socialNetwork{
+    margin-right: .6rem;
+    margin-left: .6rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    &__a{
+        @include flex(row,center,center,auto);
+        &:hover{
+            .socialNetwork__svg{
+                    transform: scale(1.2);
+            }
+        }
+    }
+    &__svg{
+        width: 1.8rem;
+        height: 1.8rem;
+        transition: transform 300ms ease;
+    }
+    &__path{
+        fill: $gray_dark;
+    }
+}

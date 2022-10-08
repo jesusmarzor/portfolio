@@ -1,0 +1,104 @@
+@import "@/assets/sass/fonts";
+@import "@/assets/sass/_variables";
+
+*,*:after,*:before{
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+}
+body{
+    font-family:Poppins;
+    color: $gray;
+    background-color: white;
+    &.dark{
+        color: $off_white;
+        background-color: $white-black;
+        .header{
+            background-color: $white-black;
+        }
+        .menu{
+            &__button{
+                color: white;
+                &.active {
+                    color: $orange;
+                }
+            }
+        }
+        .mode{
+            &__path{
+                fill: $off_white;
+            }
+        }
+        .home{
+            background-color: $off_white-black;
+        }
+        .introduce{
+            &__h1{
+                color: $off_white;
+            }
+        }
+        .about{
+            &__p{
+                color: $off_white;
+            }
+        }
+        .projects{
+            background-color: $off_white-black;
+            &__p{
+                color: white;
+            }
+        }
+        .project{
+            background-color: $white-black;
+            box-shadow: 0 0 .2rem $off_white;
+            &__title{
+                color: white;
+            }
+            &__description{
+                scrollbar-color:  $off_white transparent;
+            }
+        }
+        .contact{
+            &__p{
+                color: white;
+            }
+        }
+        .form{
+            &__button{
+                color: $white-black;
+                &:hover{
+                    color: $orange;
+                }
+            }
+        }
+        .footer{
+            background-color: $off_white-black;
+        }
+        .socialNetwork{
+            &__path{
+                fill: $off_white;
+            }
+        }
+        .button{
+            color: $white-black;
+            &:hover{
+                color: $orange;
+            }
+            &--inverse{
+                color: $orange;
+                &:hover{
+                    color: $white-black;
+                    background-color: $orange;
+                }
+            }
+        }
+    }
+}
+a{
+    text-decoration: none;
+}
+input,
+textarea{
+    outline: none;
+    border: none;
+}

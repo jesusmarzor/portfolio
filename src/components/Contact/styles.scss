@@ -1,0 +1,35 @@
+@import "@/assets/sass/_mixins";
+@import "@/assets/sass/_variables";
+@import "@/assets/sass/_fonts";
+
+.contact{
+    max-width: 1200px;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    @include flex(column,center,center,auto);
+    &__title{
+        margin-bottom: 4rem;
+        text-align: center;
+        @include underline_title(100%)
+    }
+    &__p{
+        font-size: 2.5rem;
+        font-family: PoppinsSemiBold;
+        color: $gray_dark;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 600px){
+    .contact{
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 500px){
+    .contact{
+        &__p{
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "home": "Home",
+    "about_me": "About me",
+    "projects": "Projects",
+    "contact": "Contact",
+
+    "before_name": "I'm",
+    "my_name": "Jesús Martín",
+    "my_work": "iOS and front-end web developer",
+    "write_me": "Write me",
+
+    "about_p1": "I'm Jesús Martín Zorrilla, Computer Engineer and I live in Madrid.",
+    "about_p2": "I've studied web developer since 2021. I programme almost every day because it's one of my favorite hobbies.",
+    "about_p3": "I'm a friendly, responsible, organized, involved person and I love teamwork.",
+    "blog": "Blog",
+    "download_cv": "Download CV",
+
+    "code": "Code",
+    "page": "Page",
+
+    "name": "Name",
+    "placeholder_name": "Introduce your name...",
+    "error_name": "Introduce your name.",
+    "email": "Email",
+    "placeholder_email": "Introduce your email...",
+    "error_email": "Introduce a correct email.",
+    "message": "Message",
+    "placeholder_message": "Introduce your message...",
+    "error_message": "Introduce your message",
+    "send": "Send",
+    "loading": "Loading",
+    "success_sent": "Message sent succesfully!",
+    "error_sent": "Error while sending message!",
+
+    "footer": "Page programmed by Jesús Martín",
+
+    "alt_flag": "Spain flag"
+}

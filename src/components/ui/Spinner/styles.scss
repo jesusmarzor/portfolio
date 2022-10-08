@@ -1,0 +1,17 @@
+@import "@/assets/sass/_mixins";
+@import "@/assets/sass/_variables";
+@import "@/assets/sass/_keyframes";
+
+.spinner{
+  margin: 0 auto;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid $blue;
+  border-left-color: transparent;
+  border-radius: 100%;
+  animation: loading 1s linear infinite;
+  &__min{
+    width: 1.13rem;
+    height: 1.13rem;
+  }
+}

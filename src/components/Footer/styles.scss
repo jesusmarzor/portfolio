@@ -1,0 +1,11 @@
+@import "@/assets/sass/_variables";
+.footer{
+    padding-top: 2rem;
+    background-color: $off_white;
+    
+    &__copy{
+        text-align: center;
+        padding: 1rem;
+        border-top: 1px solid #e1e6f1;;
+    }
+}

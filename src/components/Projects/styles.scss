@@ -1,0 +1,63 @@
+@import "@/assets/sass/_mixins";
+@import "@/assets/sass/_variables";
+@import "@/assets/sass/_fonts";
+.projects{
+    background-color: $off_white;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    &__resize{
+        max-width: 1200px;
+        @include flex(column,center,center,auto);
+    }
+    &__title{
+        @include underline_title(100%);
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+    &__p{
+        font-size: 2.5rem;
+        font-family: PoppinsSemiBold;
+        color: $gray_dark;
+        font-weight: bold;
+    }
+    &__list{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3,1fr);
+        -ms-grid-columns: repeat(3,1fr);
+        align-items: center;
+    }
+}
+
+@media (max-width: 1130px){
+    .projects{
+        &__list{
+            grid-template-columns: repeat(2,1fr);
+            -ms-grid-columns: repeat(2,1fr);
+        }
+    }
+}
+
+@media (max-width: 808px){
+    .projects{
+        &__list{
+            grid-template-columns: repeat(1,1fr);
+            -ms-grid-columns: repeat(1,1fr);
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .projects{
+        padding-top: 2rem;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 500px){
+    .projects{
+        &__p{
+            font-size: 2rem;
+        }
+    }
+}

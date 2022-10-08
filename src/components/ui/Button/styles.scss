@@ -1,0 +1,22 @@
+@import "@/assets/sass/_variables";
+@import "@/assets/sass/_mixins";
+
+.button{
+    @include button($off-white, $orange, $orange);
+    &:hover{
+        color: $orange;
+        background-color: transparent;
+    }
+    &:active{
+        transform: scale(0.98);
+    }
+    &--inverse{
+        color: $orange;
+        background-color: transparent;
+        margin-left: 0.5rem;
+        &:hover{
+            color: $off-white;
+            background-color: $orange;
+        }
+    }
+}

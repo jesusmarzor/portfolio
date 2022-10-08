@@ -1,0 +1,73 @@
+@import "@/assets/sass/_mixins";
+@import "@/assets/sass/_variables";
+@import "@/assets/sass/_fonts";
+
+.about{
+    max-width: 1200px;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    @include flex(row,center,center,auto);
+    &__title{
+        @include flex(row,flex-end,center,auto);
+        width: 70%;
+        @include underline_title(100%);
+    }
+    &__p{
+        font-weight: bold;
+        font-size: 2.5rem;
+        font-family: PoppinsSemiBold;
+        color: $gray_dark;
+        font-weight: bold;
+    }
+    .content{
+        padding-left: 5rem;
+        padding-right: 5rem;
+        &__p{
+            font-size: 1rem;
+        }
+        &__buttons{
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media (max-width: 1062px){
+    .about{
+        padding-top: 6rem;
+        margin-top: 6rem;
+    }
+}
+@media (max-width: 930px){
+    .about{
+        flex-direction: column;
+        &__title{
+            display: block;
+            width: auto;
+        }
+        .content{
+            padding-top: 2rem;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .about{
+        padding-top: 2rem;
+        margin-top: 8rem;
+        &__title{
+            margin-top: 0;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .about{
+        &__p{
+            font-size: 2rem;
+        }
+        .content{
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}

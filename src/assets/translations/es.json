@@ -1,0 +1,38 @@
+{
+    "home": "Inicio",
+    "about_me": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+
+    "before_name": "Soy",
+    "my_name": "Jesús Martín",
+    "my_work": "Desarrollador iOS y web front-end",
+    "write_me": "Escríbeme",
+
+    "about_p1": "Soy Jesús Martín Zorrilla, ingeniero informático y vivo en Madrid.",
+    "about_p2": "Llevo estudiando desarrollo web desde 2021. Programo casi todos los días porque es una de mis aficiones preferidas.",
+    "about_p3": "Me considero una persona amable, responsable, organizada, implicada y me encanta trabajar en equipo.",
+    "blog": "Blog",
+    "download_cv": "Descargar CV",
+
+    "code": "Código",
+    "page": "Página",
+
+    "name": "Nombre",
+    "placeholder_name": "Introduce tu nombre...",
+    "error_name": "Introduce tu nombre.",
+    "email": "Correo",
+    "placeholder_email": "Introduce tu correo...",
+    "error_email": "Introduce un correo correcto",
+    "message": "Mensaje",
+    "placeholder_message": "Introduce tu mensaje...",
+    "error_message": "Introduce tu mensaje",
+    "send": "Enviar",
+    "loading": "Cargando",
+    "success_sent": "!Mensaje enviado con éxito!",
+    "error_sent": "!Error al enviar el mensaje!",
+    
+    "footer": "Página realizada por Jesús Martín",
+
+    "alt_flag": "Bandera de inglaterra"
+}

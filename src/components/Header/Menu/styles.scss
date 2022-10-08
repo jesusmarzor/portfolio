@@ -1,0 +1,37 @@
+@import "@/assets/sass/_mixins";
+@import "@/assets/sass/_variables";
+
+.menu{
+    @include flex(row,center,center,auto);
+    line-height: 4.5rem;
+    &__li{
+        list-style: none;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    &__button{
+        font-size: 1rem;
+        letter-spacing: 0.05em;
+        font-weight: 600;
+        color: $gray_dark;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 50% 90%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+        padding: 0.2rem;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        &.active {
+            color: $orange;
+            background-size: 80% 2px;
+        }
+    }  
+}
+
+@media(max-width: 600px){
+    .menu{
+        flex-direction: column;
+    }
+}

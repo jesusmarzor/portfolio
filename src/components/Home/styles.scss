@@ -1,0 +1,83 @@
+@import "@/assets/sass/_mixins";
+@import "@/assets/sass/_variables";
+
+.home{
+    background-color: $off_white;
+    padding-top: 4.5rem;
+    &__resize{
+        max-width: 1200px;
+        @include flex(row,space-between,center,auto);
+    }
+    .profile{
+        @include flex(row,center,flex-end,0);
+        margin-top: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+@media (max-width: 1062px){
+    body{
+        &.dark{
+            .home{
+                &__resize{
+                    background-image: url('./../../assets/img/fondo_dark.webp');
+                }
+                .profile{
+                    background-color: $white-black;
+                    border-color: $white-black;
+                }
+            }
+        }
+    }
+    .home{
+        height: 32rem;
+        &__resize{
+            background-image: url('./../../assets/img/fondo_light.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            @include flex(column,inherit,inherit,auto);
+        }
+        .profile{
+            @include position(absolute,20em,0,0,0);
+            margin: 0 auto;
+            align-items: flex-start;
+            border-radius: 100%;
+            border: 1px solid white;
+            overflow: hidden;
+            width: 20rem;
+            height: 20rem;
+            background-color: white;
+            &__img{
+                width: 23rem;
+            }
+        }
+    }
+}
+@media (max-width: 600px){
+    .home{
+        height: 23rem;
+        padding-top: 3rem;
+        .profile{
+            top: 14rem;
+            width: 15rem;
+            height: 15rem;
+            &__img{
+                width: 18rem;
+            }
+        }
+    }
+}
+@media (max-width: 500px){
+    .home{
+        height: 20rem;
+        .profile{
+            top: 11.5rem;
+            width: 14rem;
+            height: 14rem;
+            &__img{
+                width: 17rem;
+            }
+        }
+    }
+}

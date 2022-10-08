@@ -1,0 +1,16 @@
+.translation{
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+@media(max-width: 600px){
+    .translation{
+        position: static;
+        margin: auto;
+        margin-top: 2rem;
+    }
+}
