@@ -10,64 +10,62 @@ export const FORM = {
 
 export const PROJECTS_ES = [
     {
+        id: 0,
         title: "To do list",
-        description: "Aplicación web para aquellas personas que le guste organizarse y cumplir todo lo que se proponga. ",
+        description: "Aplicación web perfecta para aquellas personas que les guste organizarse y cumplir todo lo que se propongan.",
         img: "/static/media/to-do-list.webp",
         links: {
             github: "https://github.com/jesusmarzor/to-do-list",
             demo: "https://to-do-list-jesusmarzor.vercel.app"
-        },
-        color: "#2a94f2"
+        }
     },
     {
-        title: "Haley Dust",
-        description: "Maquetada con HTML y SASS. Tambien he implementado BEM, una metodología de desarrollo basada en componentes.",
-        img: "/static/media/haley-dust.webp",
+        id: 1,
+        title: "Jestter",
+        description: "Clon de Twitter. Aplicación web perfecta para aquellas personas que les gusta publicar su día a día.",
+        img: "/static/media/jestter.jpg",
         links: {
-            github: "https://github.com/jesusmarzor/Haley-Dust",
-            demo: "https://jesusmarzor.github.io/Haley-Dust/"
-        },
-        color: "#feb633"
+            github: "https://github.com/jesusmarzor/jestter"
+        }
     },
     {
-        title: "Wallet",
-        description: "Proyecto desarrollado en React(front-end) y Laravel(back-end). Maquetado en SASS y usando metodología BEM.",
-        img: "/static/media/wallet.webp",
+        id: 2,
+        title: "Jesflix",
+        description: "Clon de Netflix. Aplicación iOS perfecta para aquellas personas indecisas a las que les cuesta elegir una película/serie.",
+        img: "/static/media/jesflix.jpg",
         links: {
-            github: "https://github.com/jesusmarzor/Wallet",
-            demo: "https://wallet-jesusmarzor.herokuapp.com/"
+            github: "https://github.com/jesusmarzor/jesflix"
         }
     }
 ]
 
 export const PROJECTS_EN = [
     {
+        id: 0,
         title: "To do list",
-        description: "Web application for those people that they like to organized and to achieve everything they propose. ",
-        img: "/static/media/to-do-list.webp",
+        description: "Perfect web application for those people who like to stay organized and achieve everything they propose.",
+        img: "/static/media/to-do-list.jpg",
         links: {
             github: "https://github.com/jesusmarzor/to-do-list",
             demo: "https://to-do-list-jesusmarzor.vercel.app"
-        },
-        color: "#2a94f2"
+        }
     },
     {
-        title: "Haley Dust",
-        description: "Layout with HTML and SASS. Also, I've used BEM, it's a develop methodology for components.",
-        img: "/static/media/haley-dust.webp",
+        id: 1,
+        title: "Jestter",
+        description: "Twitter clone. Perfect web application for those people who like to share their daily life.",
+        img: "/static/media/jestter.jpg",
         links: {
-            github: "https://github.com/jesusmarzor/Haley-Dust",
-            demo: "https://jesusmarzor.github.io/Haley-Dust/"
-        },
-        color: "#feb633"
+            github: "https://github.com/jesusmarzor/jestter"
+        }
     },
     {
-        title: "Wallet",
-        description: "Project programme with React(front-end) and Laravel(back-end). Layout with SASS and BEM methodology.",
-        img: "/static/media/wallet.webp",
+        id: 2,
+        title: "Jesflix",
+        description: "Netflix clone. Perfect iOS application for indecisive people who have a hard time choosing a movie/series.",
+        img: "/static/media/jesflix.jpg",
         links: {
-            github: "https://github.com/jesusmarzor/Wallet",
-            demo: "https://wallet-jesusmarzor.herokuapp.com/"
+            github: "https://github.com/jesusmarzor/jesflix"
         }
     }
 ]
