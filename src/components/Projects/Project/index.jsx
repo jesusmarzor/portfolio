@@ -1,7 +1,7 @@
 import React from "react";
-import toDoList from "@/assets/img/to-do-list.webp";
-import haleyDust from "@/assets/img/haley-dust.webp";
-import wallet from "@/assets/img/wallet.webp";
+import toDoList from "@/assets/img/to-do-list.jpg";
+import jestter from "@/assets/img/jestter.jpg";
+import jesflix from "@/assets/img/jesflix.jpg";
 import Button from "@/components/ui/Button";
 import { useTranslation } from "react-i18next";
 import { BUTTON_TYPES } from "@/utils/Constans";
@@ -10,7 +10,14 @@ import "./styles.scss";
 
 function Project({project}){
     const { t } = useTranslation();
-    const img = (project.title === "To do list") ? toDoList : (project.title === "Haley Dust") ? haleyDust : wallet;
+    let img = toDoList;
+    switch (project.id) {
+        case 1:
+            img = jestter
+            break
+        case 2:
+            img = jesflix
+    }
     return(
         <div className="project">
             <img className="project__img" src={img} alt={project.title} loading="lazy" width="352" />
@@ -20,7 +27,10 @@ function Project({project}){
             </div>
             <div className="project__buttons">
                 <Button label={BUTTON_TYPES.A} to={project.links.github}>{t('code')}</Button>
-                <Button label={BUTTON_TYPES.A} to={project.links.demo} inverse={true}>{t('page')}</Button>
+                {
+                    (project.links.demo != null) &&
+                    <Button label={BUTTON_TYPES.A} to={project.links.demo} inverse={true}>{t('page')}</Button>
+                }
             </div>
         </div>
     )
