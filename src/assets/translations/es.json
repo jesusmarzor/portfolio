@@ -6,12 +6,11 @@
 
     "before_name": "Soy",
     "my_name": "Jesús Martín",
-    "my_work": "Desarrollador iOS y web front-end",
+    "my_work": "Desarrollador iOS",
     "write_me": "Escríbeme",
-
-    "about_p1": "Soy Jesús Martín Zorrilla, ingeniero informático y vivo en Madrid.",
-    "about_p2": "Llevo estudiando desarrollo web desde 2021. Programo casi todos los días porque es una de mis aficiones preferidas.",
-    "about_p3": "Me considero una persona amable, responsable, organizada, implicada y me encanta trabajar en equipo.",
+    "about_p1": "Soy Jesús Martín Zorrilla, ingeniero informático. Me considero una persona responsable, organizada e implicada en todo lo que hago.",
+    "about_p2": "He trabajado como desarrollador web con React y ahora trabajo como desarrollador iOS. Gracias a mi curiosidad y a mi experiencia profesional siento que puedo conseguir todo lo que me proponga.",
+    "about_p3": "Dejo enlaces directos a mi blog personal y a mi curriculum.",
     "blog": "Blog",
     "download_cv": "Descargar CV",
 
